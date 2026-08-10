@@ -99,6 +99,7 @@
       align-items: center;
       position: relative;
       overflow: hidden;
+
       background:
         radial-gradient(
           circle at 80% 40%,
@@ -147,6 +148,7 @@
         #ffffff,
         #c084fc
       );
+
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -187,6 +189,7 @@
         #9333ea,
         #c026d3
       );
+
       border-color: transparent;
       color: white;
     }
@@ -238,9 +241,11 @@
       border: 1px solid #292933;
       border-radius: 16px;
       overflow: hidden;
+
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+
       transition: 0.35s;
     }
 
@@ -249,26 +254,35 @@
       border-color: #555;
     }
 
+
+    /* PROJECT IMAGES */
+
     .project-image {
       position: absolute;
       inset: 0;
+
       width: 100%;
       height: 100%;
+
       object-fit: cover;
+
       transition: 0.45s;
     }
 
     .project-with-image::after {
       content: "";
+
       position: absolute;
       inset: 0;
+
       background:
         linear-gradient(
           to top,
           rgba(7, 7, 10, 0.98) 0%,
           rgba(7, 7, 10, 0.72) 35%,
-          rgba(7, 7, 10, 0.12) 100%
+          rgba(7, 7, 10, 0.10) 100%
         );
+
       z-index: 1;
     }
 
@@ -302,7 +316,7 @@
 
 
     /* =========================
-       TEXT PROJECT CARDS
+       TEXT PROJECTS
     ========================= */
 
     .project-text {
@@ -312,13 +326,20 @@
 
     .project-text::before {
       content: "";
+
       position: absolute;
+
       width: 260px;
       height: 260px;
+
       border-radius: 50%;
+
       background: #7c3aed;
+
       filter: blur(120px);
+
       opacity: 0.1;
+
       top: -100px;
       right: -100px;
     }
@@ -326,6 +347,7 @@
     .project-text-content {
       position: relative;
       z-index: 2;
+
       margin-top: auto;
     }
 
@@ -336,14 +358,18 @@
 
     .about-section {
       background: #0d0d12;
+
       border-top: 1px solid #1d1d25;
       border-bottom: 1px solid #1d1d25;
     }
 
     .about-grid {
       display: grid;
+
       grid-template-columns: 1fr 1fr;
+
       gap: 80px;
+
       align-items: center;
     }
 
@@ -363,28 +389,38 @@
 
     .stats {
       display: grid;
+
       grid-template-columns: repeat(3, 1fr);
+
       gap: 18px;
+
       margin-top: 70px;
     }
 
     .stat {
       padding: 32px 25px;
+
       background: #15151b;
+
       border: 1px solid #282831;
+
       border-radius: 12px;
     }
 
     .stat-number {
       font-size: 48px;
       font-weight: 800;
-      background: linear-gradient(
-        135deg,
-        #fff,
-        #a855f7
-      );
+
+      background:
+        linear-gradient(
+          135deg,
+          #fff,
+          #a855f7
+        );
+
       -webkit-background-clip: text;
       background-clip: text;
+
       color: transparent;
     }
 
@@ -406,16 +442,23 @@
 
     .skill {
       padding: 14px 20px;
+
       border: 1px solid #33333d;
+
       border-radius: 50px;
+
       color: #bbb;
+
       background: #111117;
+
       transition: 0.25s;
     }
 
     .skill:hover {
       border-color: #a855f7;
+
       color: white;
+
       transform: translateY(-2px);
     }
 
@@ -426,19 +469,25 @@
 
     .contact {
       text-align: center;
+
       padding-bottom: 100px;
     }
 
     .contact h2 {
       font-size: clamp(42px, 7vw, 82px);
+
       line-height: 0.95;
+
       letter-spacing: -4px;
+
       margin-bottom: 30px;
     }
 
     .contact p {
       color: #999;
+
       margin-bottom: 35px;
+
       font-size: 17px;
     }
 
@@ -449,8 +498,11 @@
 
     footer {
       border-top: 1px solid #222;
+
       padding: 30px 0;
+
       color: #666;
+
       font-size: 13px;
     }
 
@@ -487,17 +539,20 @@
 
       .about-grid {
         grid-template-columns: 1fr;
+
         gap: 30px;
       }
 
       .stats {
         grid-template-columns: 1fr;
+
         margin-top: 45px;
       }
 
       .contact h2 {
         letter-spacing: -2px;
       }
+
     }
 
   </style>
@@ -512,6 +567,7 @@
   ========================= -->
 
   <nav>
+
     <div class="container nav-inner">
 
       <a href="#" class="logo">
@@ -519,13 +575,27 @@
       </a>
 
       <div class="nav-links">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+
+        <a href="#work">
+          Work
+        </a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#skills">
+          Skills
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
       </div>
 
     </div>
+
   </nav>
 
 
@@ -543,7 +613,9 @@
 
       <h1>
         NEGIN<br>
-        <span class="gradient-text">SHAFIEE</span>
+        <span class="gradient-text">
+          SHAFIEE
+        </span>
       </h1>
 
       <h2>
@@ -551,17 +623,27 @@
       </h2>
 
       <p class="hero-description">
-        Game designer with over 7 years of experience in the game industry,
-        creating game systems, features and user experiences for mobile games.
+
+        Game designer with over 7 years of
+        experience in the game industry,
+        creating game systems, features and
+        user experiences for mobile games.
+
       </p>
 
       <div class="buttons">
 
-        <a href="#work" class="button primary">
+        <a
+          href="#work"
+          class="button primary"
+        >
           View My Work
         </a>
 
-        <a href="#about" class="button">
+        <a
+          href="#about"
+          class="button"
+        >
           About Me
         </a>
 
@@ -592,9 +674,14 @@
       <div class="projects">
 
 
-        <!-- MENCHERZ -->
+        <!-- =====================
+             MENCHERZ
+        ====================== -->
 
-        <a href="#" class="project project-with-image">
+        <a
+          href="#"
+          class="project project-with-image"
+        >
 
           <img
             src="products-icon-mencherz.png"
@@ -621,9 +708,14 @@
         </a>
 
 
-        <!-- QUIZ OF KINGS -->
+        <!-- =====================
+             QUIZ OF KINGS
+        ====================== -->
 
-        <a href="#" class="project project-with-image">
+        <a
+          href="#"
+          class="project project-with-image"
+        >
 
           <img
             src="Quiz_of_Kings_1.webp"
@@ -650,15 +742,26 @@
         </a>
 
 
-        <!-- MIGHTY WARS -->
+        <!-- =====================
+             MIGHTY WARS
+        ====================== -->
 
-        <a href="#" class="project project-text">
+        <a
+          href="#"
+          class="project project-with-image"
+        >
 
-          <span class="project-number">
-            03
-          </span>
+          <img
+            src="header.jpg"
+            alt="Mighty Wars"
+            class="project-image"
+          >
 
-          <div class="project-text-content">
+          <div class="project-info">
+
+            <span class="project-number">
+              03
+            </span>
 
             <h3>
               Mighty Wars
@@ -673,9 +776,14 @@
         </a>
 
 
-        <!-- HAKEM SHO -->
+        <!-- =====================
+             HAKEM SHO
+        ====================== -->
 
-        <a href="#" class="project project-text">
+        <a
+          href="#"
+          class="project project-text"
+        >
 
           <span class="project-number">
             04
@@ -696,9 +804,14 @@
         </a>
 
 
-        <!-- LEADERS OF COUP -->
+        <!-- =====================
+             LEADERS OF COUP
+        ====================== -->
 
-        <a href="#" class="project project-text">
+        <a
+          href="#"
+          class="project project-text"
+        >
 
           <span class="project-number">
             05
@@ -719,9 +832,14 @@
         </a>
 
 
-        <!-- PISHIPOP -->
+        <!-- =====================
+             PISHIPOP
+        ====================== -->
 
-        <a href="#" class="project project-text">
+        <a
+          href="#"
+          class="project project-text"
+        >
 
           <span class="project-number">
             06
@@ -742,9 +860,14 @@
         </a>
 
 
-        <!-- DRAGON LAND -->
+        <!-- =====================
+             DRAGON LAND
+        ====================== -->
 
-        <a href="#" class="project project-text">
+        <a
+          href="#"
+          class="project project-text"
+        >
 
           <span class="project-number">
             07
@@ -776,7 +899,10 @@
        ABOUT
   ========================= -->
 
-  <section id="about" class="about-section">
+  <section
+    id="about"
+    class="about-section"
+  >
 
     <div class="container">
 
@@ -789,8 +915,12 @@
         <div>
 
           <h2 class="section-title">
-            Designing experiences<br>
+
+            Designing experiences
+            <br>
+
             that players love.
+
           </h2>
 
         </div>
@@ -799,25 +929,30 @@
         <div class="about-text">
 
           <p>
-            I'm a game designer with over 7 years of experience
-            in the game industry.
+            I'm a game designer with over
+            7 years of experience in the
+            game industry.
           </p>
 
           <p>
-            I've worked on several mobile game projects in Iran,
-            including Mencherz and Quiz of Kings.
+            I've worked on several mobile
+            game projects in Iran, including
+            Mencherz and Quiz of Kings.
           </p>
 
           <p>
-            My work focuses on game systems, feature design,
-            UX and creating clear design processes from concept
-            to implementation.
+            My work focuses on game systems,
+            feature design, UX and creating
+            clear design processes from
+            concept to implementation.
           </p>
 
         </div>
 
       </div>
 
+
+      <!-- STATS -->
 
       <div class="stats">
 
@@ -924,7 +1059,10 @@
        CONTACT
   ========================= -->
 
-  <section id="contact" class="contact">
+  <section
+    id="contact"
+    class="contact"
+  >
 
     <div class="container">
 
@@ -933,8 +1071,12 @@
       </div>
 
       <h2>
-        LET'S CREATE<br>
+
+        LET'S CREATE
+        <br>
+
         SOMETHING GREAT.
+
       </h2>
 
       <p>
@@ -942,7 +1084,11 @@
         I'd love to hear from you.
       </p>
 
-      <!-- بعداً ایمیل واقعی خودت را اینجا قرار می‌دهیم -->
+
+      <!--
+        بعداً ایمیل واقعی خودت را
+        اینجا قرار می‌دهیم.
+      -->
 
       <a
         href="mailto:YOUR_EMAIL@example.com"
@@ -964,7 +1110,8 @@
 
     <div class="container">
 
-      © 2026 Negin Shafiee. All rights reserved.
+      © 2026 Negin Shafiee.
+      All rights reserved.
 
     </div>
 
