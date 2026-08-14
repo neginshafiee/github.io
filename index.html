@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Negin Shafiee - Game Designer & UX Designer</title>
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Negin Shafiee — Game Designer & UX Designer</title>
+
 
   <style>
 
@@ -50,10 +57,15 @@
       top: 0;
       left: 0;
       width: 100%;
+
       padding: 22px 0;
+
       background: rgba(9, 9, 13, 0.82);
+
       backdrop-filter: blur(14px);
+
       border-bottom: 1px solid rgba(255,255,255,0.05);
+
       z-index: 1000;
     }
 
@@ -76,7 +88,9 @@
     .nav-links {
       display: flex;
       gap: 32px;
+
       color: #aaa;
+
       font-size: 14px;
     }
 
@@ -95,9 +109,12 @@
 
     .hero {
       min-height: 100vh;
+
       display: flex;
       align-items: center;
+
       position: relative;
+
       overflow: hidden;
 
       background:
@@ -111,91 +128,125 @@
 
     .hero::after {
       content: "";
+
       position: absolute;
+
       width: 500px;
       height: 500px;
+
       background: #7c3aed;
+
       filter: blur(180px);
+
       opacity: 0.08;
+
       right: -200px;
       bottom: -100px;
     }
 
     .hero-content {
       position: relative;
+
       z-index: 2;
+
       padding-top: 80px;
     }
 
     .eyebrow {
       color: #b56cff;
+
       font-size: 13px;
+
       letter-spacing: 4px;
+
       text-transform: uppercase;
+
       margin-bottom: 22px;
     }
 
     .hero h1 {
       font-size: clamp(55px, 10vw, 115px);
+
       line-height: 0.9;
+
       letter-spacing: -6px;
+
       margin-bottom: 30px;
     }
 
     .gradient-text {
-      background: linear-gradient(
-        90deg,
-        #ffffff,
-        #c084fc
-      );
+      background:
+        linear-gradient(
+          90deg,
+          #ffffff,
+          #c084fc
+        );
 
       -webkit-background-clip: text;
+
       background-clip: text;
+
       color: transparent;
     }
 
     .hero h2 {
       font-size: clamp(23px, 4vw, 40px);
+
       font-weight: 400;
+
       color: #c8c8c8;
+
       margin-bottom: 25px;
     }
 
     .hero-description {
       max-width: 650px;
+
       color: #999;
+
       font-size: 18px;
+
       margin-bottom: 38px;
     }
 
     .buttons {
       display: flex;
+
       gap: 14px;
+
       flex-wrap: wrap;
     }
 
     .button {
       display: inline-block;
+
       padding: 14px 24px;
+
       border: 1px solid #393943;
+
       border-radius: 8px;
+
       transition: 0.3s;
+
       font-size: 14px;
     }
 
     .button.primary {
-      background: linear-gradient(
-        135deg,
-        #9333ea,
-        #c026d3
-      );
+      background:
+        linear-gradient(
+          135deg,
+          #9333ea,
+          #c026d3
+        );
 
       border-color: transparent;
+
       color: white;
     }
 
     .button:hover {
       transform: translateY(-3px);
+
       border-color: #777;
     }
 
@@ -210,16 +261,23 @@
 
     .section-label {
       color: #b56cff;
+
       font-size: 13px;
+
       letter-spacing: 3px;
+
       text-transform: uppercase;
+
       margin-bottom: 12px;
     }
 
     .section-title {
       font-size: clamp(38px, 6vw, 64px);
+
       line-height: 1;
+
       letter-spacing: -3px;
+
       margin-bottom: 50px;
     }
 
@@ -230,20 +288,29 @@
 
     .projects {
       display: grid;
+
       grid-template-columns: repeat(2, 1fr);
+
       gap: 24px;
     }
 
     .project {
       position: relative;
+
       min-height: 390px;
+
       background: #15151b;
+
       border: 1px solid #292933;
+
       border-radius: 16px;
+
       overflow: hidden;
 
       display: flex;
+
       flex-direction: column;
+
       justify-content: flex-end;
 
       transition: 0.35s;
@@ -251,6 +318,7 @@
 
     .project:hover {
       transform: translateY(-7px);
+
       border-color: #555;
     }
 
@@ -259,9 +327,11 @@
 
     .project-image {
       position: absolute;
+
       inset: 0;
 
       width: 100%;
+
       height: 100%;
 
       object-fit: cover;
@@ -273,6 +343,7 @@
       content: "";
 
       position: absolute;
+
       inset: 0;
 
       background:
@@ -292,25 +363,33 @@
 
     .project-info {
       position: relative;
+
       z-index: 2;
+
       padding: 30px;
     }
 
     .project-number {
       display: block;
+
       color: #a855f7;
+
       font-size: 13px;
+
       margin-bottom: 10px;
     }
 
     .project h3 {
       font-size: 32px;
+
       line-height: 1.1;
+
       margin-bottom: 8px;
     }
 
     .project p {
       color: #bbb;
+
       font-size: 14px;
     }
 
@@ -321,6 +400,7 @@
 
     .project-text {
       padding: 32px;
+
       justify-content: space-between;
     }
 
@@ -330,6 +410,7 @@
       position: absolute;
 
       width: 260px;
+
       height: 260px;
 
       border-radius: 50%;
@@ -341,11 +422,13 @@
       opacity: 0.1;
 
       top: -100px;
+
       right: -100px;
     }
 
     .project-text-content {
       position: relative;
+
       z-index: 2;
 
       margin-top: auto;
@@ -360,26 +443,36 @@
       background: #0d0d12;
 
       border-top: 1px solid #1d1d25;
+
       border-bottom: 1px solid #1d1d25;
     }
 
     .about-grid {
       display: grid;
 
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 0.8fr 1.2fr;
 
       gap: 80px;
 
-      align-items: center;
+      align-items: start;
     }
 
     .about-text {
       color: #aaa;
-      font-size: 18px;
+
+      font-size: 17px;
+
+      line-height: 1.8;
     }
 
     .about-text p {
-      margin-bottom: 20px;
+      margin-bottom: 24px;
+    }
+
+    .about-text strong {
+      color: #f5f5f5;
+
+      font-weight: 600;
     }
 
 
@@ -409,6 +502,7 @@
 
     .stat-number {
       font-size: 48px;
+
       font-weight: 800;
 
       background:
@@ -419,6 +513,7 @@
         );
 
       -webkit-background-clip: text;
+
       background-clip: text;
 
       color: transparent;
@@ -426,6 +521,7 @@
 
     .stat-label {
       color: #888;
+
       font-size: 14px;
     }
 
@@ -436,7 +532,9 @@
 
     .skills {
       display: flex;
+
       flex-wrap: wrap;
+
       gap: 12px;
     }
 
@@ -489,6 +587,16 @@
       margin-bottom: 35px;
 
       font-size: 17px;
+    }
+
+    .contact-buttons {
+      display: flex;
+
+      justify-content: center;
+
+      gap: 14px;
+
+      flex-wrap: wrap;
     }
 
 
@@ -555,13 +663,8 @@
 
     }
 
-    .contact-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
-}
   </style>
+
 </head>
 
 
@@ -630,10 +733,9 @@
 
       <p class="hero-description">
 
-        Game designer with over 7 years of
-        experience in the game industry,
+        Game designer with over 7 years of experience
         creating game systems, features and
-        user experiences for mobile games.
+        player-centered experiences.
 
       </p>
 
@@ -680,9 +782,7 @@
       <div class="projects">
 
 
-        <!-- =====================
-             MENCHERZ
-        ====================== -->
+        <!-- MENCHERZ -->
 
         <a
           href="#"
@@ -714,9 +814,7 @@
         </a>
 
 
-        <!-- =====================
-             QUIZ OF KINGS
-        ====================== -->
+        <!-- QUIZ OF KINGS -->
 
         <a
           href="#"
@@ -748,9 +846,7 @@
         </a>
 
 
-        <!-- =====================
-             MIGHTY WARS
-        ====================== -->
+        <!-- MIGHTY WARS -->
 
         <a
           href="#"
@@ -782,9 +878,7 @@
         </a>
 
 
-        <!-- =====================
-             HAKEM SHO
-        ====================== -->
+        <!-- HAKEM SHO -->
 
         <a
           href="#"
@@ -810,9 +904,7 @@
         </a>
 
 
-        <!-- =====================
-             LEADERS OF COUP
-        ====================== -->
+        <!-- LEADERS OF COUP -->
 
         <a
           href="#"
@@ -838,9 +930,7 @@
         </a>
 
 
-        <!-- =====================
-             PISHIPOP
-        ====================== -->
+        <!-- PISHIPOP -->
 
         <a
           href="#"
@@ -866,9 +956,7 @@
         </a>
 
 
-        <!-- =====================
-             DRAGON LAND
-        ====================== -->
+        <!-- DRAGON LAND -->
 
         <a
           href="#"
@@ -918,14 +1006,15 @@
 
       <div class="about-grid">
 
+
         <div>
 
           <h2 class="section-title">
 
-            Designing experiences
+            Designing games
             <br>
 
-            that players love.
+            through curiosity.
 
           </h2>
 
@@ -935,22 +1024,42 @@
         <div class="about-text">
 
           <p>
-            I'm a game designer with over
-            7 years of experience in the
-            game industry.
+
+            I’m a game designer with 7+ years of
+            experience creating player-centered
+            experiences across mobile games.
+
           </p>
 
-          <p>
-            I've worked on several mobile
-            game projects in Iran, including
-            Mencherz and Quiz of Kings.
-          </p>
 
           <p>
-            My work focuses on game systems,
-            feature design, UX and creating
-            clear design processes from
-            concept to implementation.
+
+            With a background in
+            <strong>
+              Industrial Engineering and Illustration
+            </strong>,
+            I combine analytical thinking,
+            visual creativity, and game design
+            to build engaging experiences.
+
+          </p>
+
+
+          <p>
+
+            My experience spans
+            <strong>
+              feature and system design, UX,
+              prototyping, GDD writing, and
+              data-informed design
+            </strong>,
+            with work on titles including
+            <strong>
+              Quiz of Kings, Mighty Wars,
+              Mencherz, Hakem Sho,
+              and Leaders of Coup.
+            </strong>
+
           </p>
 
         </div>
@@ -962,6 +1071,7 @@
 
       <div class="stats">
 
+
         <div class="stat">
 
           <div class="stat-number">
@@ -969,7 +1079,7 @@
           </div>
 
           <div class="stat-label">
-            Years Experience
+            Years in Game Industry
           </div>
 
         </div>
@@ -991,14 +1101,17 @@
         <div class="stat">
 
           <div class="stat-number">
-            2
+            3
           </div>
 
           <div class="stat-label">
-            Major Mobile Titles
+            Design Perspectives
+            <br>
+            Design · UX · Illustration
           </div>
 
         </div>
+
 
       </div>
 
@@ -1065,46 +1178,64 @@
        CONTACT
   ========================= -->
 
-  <section id="contact" class="contact">
+  <section
+    id="contact"
+    class="contact"
+  >
 
-  <div class="container">
+    <div class="container">
 
-    <div class="section-label">
-      Contact
+      <div class="section-label">
+        Contact
+      </div>
+
+      <h2>
+
+        LET'S CREATE
+        <br>
+
+        SOMETHING GREAT.
+
+      </h2>
+
+      <p>
+
+        Have a project, collaboration,
+        or opportunity in mind?
+        I'd love to hear from you.
+
+      </p>
+
+
+      <div class="contact-buttons">
+
+
+        <!-- EMAIL -->
+
+        <a
+          href="mailto:negiin.shafiee@gmail.com"
+          class="button primary"
+        >
+          Email Me
+        </a>
+
+
+        <!-- LINKEDIN -->
+
+        <a
+          href="https://www.linkedin.com/in/neginshafiee/"
+          target="_blank"
+          class="button"
+        >
+          LinkedIn
+        </a>
+
+
+      </div>
+
     </div>
 
-    <h2>
-      LET'S CREATE<br>
-      SOMETHING GREAT.
-    </h2>
-
-    <p>
-      Have a project, collaboration, or opportunity in mind?
-      I'd love to hear from you.
-    </p>
-
-    <div class="contact-buttons">
-
-      <a
-        href="mailto:negiin.shafiee@gmail.com"
-        class="button primary"
-      >
-        Email Me
-      </a>
-
-      <a
-        href="https://www.linkedin.com/in/neginshafiee/"
-        target="_blank"
-        class="button"
-      >
-        LinkedIn
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
+  </section>
 
 
   <!-- =========================
@@ -1124,4 +1255,5 @@
 
 
 </body>
+
 </html>
