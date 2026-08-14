@@ -53,15 +53,10 @@
       top: 0;
       left: 0;
       width: 100%;
-
       padding: 22px 0;
-
       background: rgba(33, 20, 22, 0.88);
-
       backdrop-filter: blur(14px);
-
       border-bottom: 1px solid rgba(232, 117, 76, 0.18);
-
       z-index: 1000;
     }
 
@@ -84,9 +79,7 @@
     .nav-links {
       display: flex;
       gap: 32px;
-
       color: #cdb5ac;
-
       font-size: 14px;
     }
 
@@ -105,12 +98,9 @@
 
     .hero {
       min-height: 100vh;
-
       display: flex;
       align-items: center;
-
       position: relative;
-
       overflow: hidden;
 
       background:
@@ -137,71 +127,48 @@
 
     .hero::before {
       content: "";
-
       position: absolute;
-
       width: 550px;
       height: 550px;
-
       border-radius: 50%;
-
       background: #e9684d;
-
       filter: blur(180px);
-
       opacity: 0.09;
-
       right: -180px;
       top: 20%;
     }
 
     .hero::after {
       content: "";
-
       position: absolute;
-
       width: 450px;
       height: 450px;
-
       border-radius: 50%;
-
       background: #d94d78;
-
       filter: blur(180px);
-
       opacity: 0.07;
-
       left: -180px;
       bottom: -100px;
     }
 
     .hero-content {
       position: relative;
-
       z-index: 2;
-
       padding-top: 80px;
     }
 
     .eyebrow {
       color: #f1845d;
-
       font-size: 13px;
-
       letter-spacing: 4px;
-
       text-transform: uppercase;
-
       margin-bottom: 22px;
     }
 
     .hero h1 {
       font-size: clamp(55px, 10vw, 115px);
-
       line-height: 0.9;
-
       letter-spacing: -6px;
-
       margin-bottom: 30px;
     }
 
@@ -211,45 +178,31 @@
 
     .hero h2 {
       font-size: clamp(23px, 4vw, 40px);
-
       font-weight: 400;
-
       color: #ead4c9;
-
       margin-bottom: 25px;
     }
 
     .hero-description {
       max-width: 650px;
-
       color: #bda69e;
-
       font-size: 18px;
-
       margin-bottom: 38px;
     }
 
     .buttons {
       display: flex;
-
       gap: 14px;
-
       flex-wrap: wrap;
     }
 
     .button {
       display: inline-block;
-
       padding: 14px 24px;
-
       border: 1px solid #5b3938;
-
       border-radius: 9px;
-
       transition: 0.3s;
-
       font-size: 14px;
-
       background: #2b1a1d;
     }
 
@@ -262,7 +215,6 @@
         );
 
       border-color: transparent;
-
       color: #fff8f3;
 
       box-shadow:
@@ -271,7 +223,6 @@
 
     .button:hover {
       transform: translateY(-3px);
-
       border-color: #ef7a5c;
 
       box-shadow:
@@ -289,25 +240,17 @@
 
     .section-label {
       color: #ef7956;
-
       font-size: 13px;
-
       letter-spacing: 3px;
-
       text-transform: uppercase;
-
       margin-bottom: 12px;
     }
 
     .section-title {
       font-size: clamp(38px, 6vw, 64px);
-
       line-height: 1;
-
       letter-spacing: -3px;
-
       margin-bottom: 50px;
-
       color: #fff0e8;
     }
 
@@ -327,15 +270,12 @@
 
     .projects {
       display: grid;
-
       grid-template-columns: repeat(2, 1fr);
-
       gap: 24px;
     }
 
     .project {
       position: relative;
-
       min-height: 390px;
 
       background:
@@ -346,15 +286,11 @@
         );
 
       border: 1px solid #513133;
-
       border-radius: 16px;
-
       overflow: hidden;
 
       display: flex;
-
       flex-direction: column;
-
       justify-content: flex-end;
 
       transition: 0.35s;
@@ -365,7 +301,6 @@
 
     .project:hover {
       transform: translateY(-7px);
-
       border-color: #a45252;
 
       box-shadow:
@@ -374,11 +309,9 @@
 
     .project-image {
       position: absolute;
-
       inset: 0;
 
       width: 100%;
-
       height: 100%;
 
       object-fit: cover;
@@ -390,7 +323,6 @@
       content: "";
 
       position: absolute;
-
       inset: 0;
 
       background:
@@ -410,36 +342,72 @@
 
     .project-info {
       position: relative;
-
       z-index: 2;
-
       padding: 30px;
     }
 
     .project-number {
       display: block;
-
       color: #ef7956;
-
       font-size: 13px;
-
       margin-bottom: 10px;
     }
 
     .project h3 {
       font-size: 32px;
-
       line-height: 1.1;
-
       margin-bottom: 8px;
-
       color: #fff1e8;
     }
 
     .project p {
       color: #c8afa6;
-
       font-size: 14px;
+    }
+
+
+    /* =========================
+       PLATFORM LINKS
+    ========================= */
+
+    .platform-links {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .platform-link {
+      display: inline-flex;
+      align-items: center;
+
+      padding: 8px 13px;
+
+      border: 1px solid rgba(240, 120, 69, 0.45);
+
+      border-radius: 7px;
+
+      background: rgba(33, 20, 22, 0.72);
+
+      color: #f4c7b5;
+
+      font-size: 12px;
+
+      transition: 0.25s;
+    }
+
+    .platform-link:hover {
+      background:
+        linear-gradient(
+          135deg,
+          #e87548,
+          #df5472
+        );
+
+      border-color: transparent;
+      color: white;
+
+      transform: translateY(-2px);
     }
 
 
@@ -449,7 +417,6 @@
 
     .project-text {
       padding: 32px;
-
       justify-content: space-between;
 
       background:
@@ -482,9 +449,7 @@
 
     .project-text-content {
       position: relative;
-
       z-index: 2;
-
       margin-top: auto;
     }
 
@@ -502,25 +467,19 @@
         );
 
       border-top: 1px solid #4b2c30;
-
       border-bottom: 1px solid #4b2c30;
     }
 
     .about-grid {
       display: grid;
-
       grid-template-columns: 0.8fr 1.2fr;
-
       gap: 80px;
-
       align-items: start;
     }
 
     .about-text {
       color: #c4aaa1;
-
       font-size: 17px;
-
       line-height: 1.8;
     }
 
@@ -530,7 +489,6 @@
 
     .about-text strong {
       color: #ffe5d8;
-
       font-weight: 600;
     }
 
@@ -541,11 +499,8 @@
 
     .stats {
       display: grid;
-
       grid-template-columns: repeat(3, 1fr);
-
       gap: 18px;
-
       margin-top: 70px;
     }
 
@@ -560,7 +515,6 @@
         );
 
       border: 1px solid #543337;
-
       border-radius: 12px;
 
       box-shadow:
@@ -569,7 +523,6 @@
 
     .stat-number {
       font-size: 48px;
-
       font-weight: 800;
 
       background:
@@ -580,15 +533,12 @@
         );
 
       -webkit-background-clip: text;
-
       background-clip: text;
-
       color: transparent;
     }
 
     .stat-label {
       color: #af928a;
-
       font-size: 14px;
     }
 
@@ -603,9 +553,7 @@
 
     .skills {
       display: flex;
-
       flex-wrap: wrap;
-
       gap: 12px;
     }
 
@@ -630,7 +578,6 @@
 
     .skill:hover {
       border-color: #e76f58;
-
       color: #fff3eb;
 
       background:
@@ -650,7 +597,6 @@
 
     .contact {
       text-align: center;
-
       padding-bottom: 100px;
 
       background:
@@ -669,11 +615,8 @@
 
     .contact h2 {
       font-size: clamp(42px, 7vw, 82px);
-
       line-height: 0.95;
-
       letter-spacing: -4px;
-
       margin-bottom: 30px;
 
       background:
@@ -684,27 +627,20 @@
         );
 
       -webkit-background-clip: text;
-
       background-clip: text;
-
       color: transparent;
     }
 
     .contact p {
       color: #b99f97;
-
       margin-bottom: 35px;
-
       font-size: 17px;
     }
 
     .contact-buttons {
       display: flex;
-
       justify-content: center;
-
       gap: 14px;
-
       flex-wrap: wrap;
     }
 
@@ -715,13 +651,9 @@
 
     footer {
       border-top: 1px solid #44292d;
-
       padding: 30px 0;
-
       color: #8e756e;
-
       font-size: 13px;
-
       background: #1c1113;
     }
 
@@ -756,15 +688,17 @@
         min-height: 330px;
       }
 
+      .project h3 {
+        font-size: 27px;
+      }
+
       .about-grid {
         grid-template-columns: 1fr;
-
         gap: 30px;
       }
 
       .stats {
         grid-template-columns: 1fr;
-
         margin-top: 45px;
       }
 
@@ -889,20 +823,16 @@
         Featured Projects
       </h2>
 
-
       <div class="projects">
 
 
-        <!-- MENCHERZ -->
+        <!-- MENCHERZ / LUCKY LUDO -->
 
-        <a
-          href="#"
-          class="project project-with-image"
-        >
+        <div class="project project-with-image">
 
           <img
             src="mencherz.png"
-            alt="Mencherz"
+            alt="Mencherz / Lucky Ludo"
             class="project-image"
           >
 
@@ -913,24 +843,43 @@
             </span>
 
             <h3>
-              Mencherz
+              Mencherz / Lucky Ludo
             </h3>
 
             <p>
               Game Design · UX Design
             </p>
 
+            <div class="platform-links">
+
+              <a
+                href="https://play.google.com/store/apps/details?id=com.incyteltech.mencherz&hl=gsw"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="platform-link"
+              >
+                Google Play
+              </a>
+
+              <a
+                href="https://apps.apple.com/tr/app/lucky-ludo/id1643296977"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="platform-link"
+              >
+                App Store
+              </a>
+
+            </div>
+
           </div>
 
-        </a>
+        </div>
 
 
         <!-- QUIZ OF KINGS -->
 
-        <a
-          href="#"
-          class="project project-with-image"
-        >
+        <div class="project project-with-image">
 
           <img
             src="quiz-of-kings.webp"
@@ -952,21 +901,40 @@
               Game Design · System Design
             </p>
 
+            <div class="platform-links">
+
+              <a
+                href="https://play.google.com/store/apps/details?id=co.palang.QuizOfKingss&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="platform-link"
+              >
+                Google Play
+              </a>
+
+              <a
+                href="https://apps.apple.com/us/app/quiz-of-kings-online-trivia/id6452270861"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="platform-link"
+              >
+                App Store
+              </a>
+
+            </div>
+
           </div>
 
-        </a>
+        </div>
 
 
-        <!-- MIGHTY WARS -->
+        <!-- MIGHTY WARS / VERSUS -->
 
-        <a
-          href="#"
-          class="project project-with-image"
-        >
+        <div class="project project-with-image">
 
           <img
             src="mighty-wars.jpg"
-            alt="Mighty Wars"
+            alt="Mighty Wars / Versus"
             class="project-image"
           >
 
@@ -977,24 +945,34 @@
             </span>
 
             <h3>
-              Mighty Wars
+              Mighty Wars / Versus
             </h3>
 
             <p>
               Game Design
             </p>
 
+            <div class="platform-links">
+
+              <a
+                href="https://play.google.com/store/apps/details?id=com.stick.battle.mighty.tower.clash&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="platform-link"
+              >
+                Google Play
+              </a>
+
+            </div>
+
           </div>
 
-        </a>
+        </div>
 
 
         <!-- HAKEM SHO -->
 
-        <a
-          href="#"
-          class="project project-text"
-        >
+        <div class="project project-text">
 
           <span class="project-number">
             04
@@ -1010,17 +988,36 @@
               Game Design
             </p>
 
+            <div class="platform-links">
+
+              <a
+                href="https://play.google.com/store/apps/details?id=com.incytel.hakemsho&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="platform-link"
+              >
+                Google Play
+              </a>
+
+              <a
+                href="https://apps.apple.com/us/app/hakemsho/id6503235824"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="platform-link"
+              >
+                App Store
+              </a>
+
+            </div>
+
           </div>
 
-        </a>
+        </div>
 
 
         <!-- LEADERS OF COUP -->
 
-        <a
-          href="#"
-          class="project project-text"
-        >
+        <div class="project project-text">
 
           <span class="project-number">
             05
@@ -1036,17 +1033,27 @@
               Game Design
             </p>
 
+            <div class="platform-links">
+
+              <a
+                href="https://apps.apple.com/us/app/leaders-of-coup/id6636480354"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="platform-link"
+              >
+                App Store
+              </a>
+
+            </div>
+
           </div>
 
-        </a>
+        </div>
 
 
         <!-- PISHIPOP -->
 
-        <a
-          href="#"
-          class="project project-text"
-        >
+        <div class="project project-text">
 
           <span class="project-number">
             06
@@ -1064,15 +1071,12 @@
 
           </div>
 
-        </a>
+        </div>
 
 
         <!-- DRAGON LAND -->
 
-        <a
-          href="#"
-          class="project project-text"
-        >
+        <div class="project project-text">
 
           <span class="project-number">
             07
@@ -1090,7 +1094,7 @@
 
           </div>
 
-        </a>
+        </div>
 
 
       </div>
@@ -1117,14 +1121,12 @@
 
       <div class="about-grid">
 
-
         <div>
 
           <h2 class="section-title">
 
             Designing games
             <br>
-
             through curiosity.
 
           </h2>
@@ -1140,7 +1142,6 @@
             experiences across mobile games.
           </p>
 
-
           <p>
             With a background in
             <strong>
@@ -1150,7 +1151,6 @@
             visual creativity, and game design
             to build engaging experiences.
           </p>
-
 
           <p>
             My experience spans
@@ -1175,7 +1175,6 @@
       <!-- STATS -->
 
       <div class="stats">
-
 
         <div class="stat">
 
@@ -1217,7 +1216,6 @@
 
         </div>
 
-
       </div>
 
     </div>
@@ -1240,7 +1238,6 @@
       <h2 class="section-title">
         Skills & Tools
       </h2>
-
 
       <div class="skills">
 
@@ -1305,7 +1302,6 @@
         or opportunity in mind?
         I'd love to hear from you.
       </p>
-
 
       <div class="contact-buttons">
 
