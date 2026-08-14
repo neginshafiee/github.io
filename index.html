@@ -5,13 +5,9 @@
 
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Negin Shafiee — Game Designer & UX Designer</title>
-
 
   <style>
 
@@ -27,8 +23,8 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #09090d;
-      color: #f5f5f5;
+      background: #100b0c;
+      color: #fff4f2;
       line-height: 1.6;
     }
 
@@ -60,11 +56,11 @@
 
       padding: 22px 0;
 
-      background: rgba(9, 9, 13, 0.82);
+      background: rgba(16, 11, 12, 0.84);
 
       backdrop-filter: blur(14px);
 
-      border-bottom: 1px solid rgba(255,255,255,0.05);
+      border-bottom: 1px solid rgba(255, 120, 100, 0.08);
 
       z-index: 1000;
     }
@@ -82,15 +78,13 @@
     }
 
     .logo span {
-      color: #FF6B35;
+      color: #ff7043;
     }
 
     .nav-links {
       display: flex;
       gap: 32px;
-
-      color: #aaa;
-
+      color: #b9a5a4;
       font-size: 14px;
     }
 
@@ -99,7 +93,7 @@
     }
 
     .nav-links a:hover {
-      color: #fff;
+      color: #ff7a59;
     }
 
 
@@ -120,10 +114,15 @@
       background:
         radial-gradient(
           circle at 80% 40%,
-          rgba(124, 58, 237, 0.18),
+          rgba(255, 92, 138, 0.15),
           transparent 35%
         ),
-        #09090d;
+        radial-gradient(
+          circle at 20% 70%,
+          rgba(255, 112, 67, 0.10),
+          transparent 32%
+        ),
+        #100b0c;
     }
 
     .hero::after {
@@ -134,11 +133,11 @@
       width: 500px;
       height: 500px;
 
-      background: #7c3aed;
+      background: #ff5c8a;
 
       filter: blur(180px);
 
-      opacity: 0.08;
+      opacity: 0.07;
 
       right: -200px;
       bottom: -100px;
@@ -146,14 +145,12 @@
 
     .hero-content {
       position: relative;
-
       z-index: 2;
-
       padding-top: 80px;
     }
 
     .eyebrow {
-      color: #FF8A65;
+      color: #ff805f;
 
       font-size: 13px;
 
@@ -178,8 +175,8 @@
       background:
         linear-gradient(
           90deg,
-          #ffffff,
-          #c084fc
+          #ff7a45,
+          #ff4f81
         );
 
       -webkit-background-clip: text;
@@ -194,7 +191,7 @@
 
       font-weight: 400;
 
-      color: #c8c8c8;
+      color: #d8c4c2;
 
       margin-bottom: 25px;
     }
@@ -202,7 +199,7 @@
     .hero-description {
       max-width: 650px;
 
-      color: #999;
+      color: #a99492;
 
       font-size: 18px;
 
@@ -211,9 +208,7 @@
 
     .buttons {
       display: flex;
-
       gap: 14px;
-
       flex-wrap: wrap;
     }
 
@@ -222,7 +217,7 @@
 
       padding: 14px 24px;
 
-      border: 1px solid #393943;
+      border: 1px solid #493536;
 
       border-radius: 8px;
 
@@ -235,8 +230,8 @@
       background:
         linear-gradient(
           135deg,
-          #9333ea,
-          #c026d3
+          #ff7043,
+          #ff3d81
         );
 
       border-color: transparent;
@@ -247,7 +242,7 @@
     .button:hover {
       transform: translateY(-3px);
 
-      border-color: #777;
+      border-color: #ff765b;
     }
 
 
@@ -260,7 +255,7 @@
     }
 
     .section-label {
-      color: #FF8A65;
+      color: #ff8060;
 
       font-size: 13px;
 
@@ -299,9 +294,9 @@
 
       min-height: 390px;
 
-      background: #15151b;
+      background: #1a1113;
 
-      border: 1px solid #292933;
+      border: 1px solid #332325;
 
       border-radius: 16px;
 
@@ -319,11 +314,8 @@
     .project:hover {
       transform: translateY(-7px);
 
-      border-color: #555;
+      border-color: #684047;
     }
-
-
-    /* PROJECT IMAGES */
 
     .project-image {
       position: absolute;
@@ -349,9 +341,9 @@
       background:
         linear-gradient(
           to top,
-          rgba(7, 7, 10, 0.98) 0%,
-          rgba(7, 7, 10, 0.72) 35%,
-          rgba(7, 7, 10, 0.10) 100%
+          rgba(10, 7, 8, 0.98) 0%,
+          rgba(10, 7, 8, 0.72) 35%,
+          rgba(10, 7, 8, 0.10) 100%
         );
 
       z-index: 1;
@@ -372,7 +364,7 @@
     .project-number {
       display: block;
 
-      color: #FF6B35;
+      color: #ff7657;
 
       font-size: 13px;
 
@@ -388,7 +380,7 @@
     }
 
     .project p {
-      color: #bbb;
+      color: #c0adab;
 
       font-size: 14px;
     }
@@ -410,19 +402,17 @@
       position: absolute;
 
       width: 260px;
-
       height: 260px;
 
       border-radius: 50%;
 
-      background: #7c3aed;
+      background: #ff5c72;
 
       filter: blur(120px);
 
-      opacity: 0.1;
+      opacity: 0.08;
 
       top: -100px;
-
       right: -100px;
     }
 
@@ -440,11 +430,11 @@
     ========================= */
 
     .about-section {
-      background: #0d0d12;
+      background: #140e10;
 
-      border-top: 1px solid #1d1d25;
+      border-top: 1px solid #2a1b1e;
 
-      border-bottom: 1px solid #1d1d25;
+      border-bottom: 1px solid #2a1b1e;
     }
 
     .about-grid {
@@ -458,7 +448,7 @@
     }
 
     .about-text {
-      color: #aaa;
+      color: #b9a6a4;
 
       font-size: 17px;
 
@@ -470,7 +460,7 @@
     }
 
     .about-text strong {
-      color: #f5f5f5;
+      color: #fff0ed;
 
       font-weight: 600;
     }
@@ -493,9 +483,9 @@
     .stat {
       padding: 32px 25px;
 
-      background: #15151b;
+      background: #1a1113;
 
-      border: 1px solid #282831;
+      border: 1px solid #332326;
 
       border-radius: 12px;
     }
@@ -508,8 +498,8 @@
       background:
         linear-gradient(
           135deg,
-          #fff,
-          #FF6B35
+          #ff805c,
+          #ff4f81
         );
 
       -webkit-background-clip: text;
@@ -520,7 +510,7 @@
     }
 
     .stat-label {
-      color: #888;
+      color: #988584;
 
       font-size: 14px;
     }
@@ -541,19 +531,19 @@
     .skill {
       padding: 14px 20px;
 
-      border: 1px solid #33333d;
+      border: 1px solid #3a292c;
 
       border-radius: 50px;
 
-      color: #bbb;
+      color: #c4b2b0;
 
-      background: #111117;
+      background: #171012;
 
       transition: 0.25s;
     }
 
     .skill:hover {
-      border-color: #FF6B35;
+      border-color: #ff6b52;
 
       color: white;
 
@@ -569,6 +559,13 @@
       text-align: center;
 
       padding-bottom: 100px;
+
+      background:
+        radial-gradient(
+          circle at 50% 80%,
+          rgba(255, 78, 121, 0.08),
+          transparent 35%
+        );
     }
 
     .contact h2 {
@@ -582,7 +579,7 @@
     }
 
     .contact p {
-      color: #999;
+      color: #a99593;
 
       margin-bottom: 35px;
 
@@ -605,11 +602,11 @@
     ========================= */
 
     footer {
-      border-top: 1px solid #222;
+      border-top: 1px solid #2b1d20;
 
       padding: 30px 0;
 
-      color: #666;
+      color: #716261;
 
       font-size: 13px;
     }
@@ -722,9 +719,11 @@
 
       <h1>
         NEGIN<br>
+
         <span class="gradient-text">
           SHAFIEE
         </span>
+
       </h1>
 
       <h2>
@@ -1210,20 +1209,16 @@
       <div class="contact-buttons">
 
 
-        <!-- EMAIL -->
-
         <a
-          href="mailto:negiin.shafiee@gmail.com"
+          href="mailto:YOUR_EMAIL@example.com"
           class="button primary"
         >
           Email Me
         </a>
 
 
-        <!-- LINKEDIN -->
-
         <a
-          href="https://www.linkedin.com/in/neginshafiee/"
+          href="YOUR_LINKEDIN_URL"
           target="_blank"
           class="button"
         >
