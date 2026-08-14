@@ -7,13 +7,22 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Negin Shafiee — Game Designer & UX Designer</title>
+  <title>Negin Shafiee - Game & UX Designer</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
 
-    /* =========================
+    /* ==================================================
        RESET
-    ========================= */
+    ================================================== */
 
     * {
       margin: 0;
@@ -26,10 +35,11 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #F6F0EA;
-      color: #2B2020;
+      font-family: "Space Grotesk", Arial, sans-serif;
+      background: #F5EDE7;
+      color: #2D2020;
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
     a {
@@ -48,22 +58,23 @@
     }
 
 
-    /* =========================
+    /* ==================================================
        NAVIGATION
-    ========================= */
+    ================================================== */
 
     nav {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      padding: 22px 0;
 
-      background: rgba(246, 240, 234, 0.94);
+      padding: 20px 0;
 
-      backdrop-filter: blur(10px);
+      background: rgba(245, 237, 231, 0.94);
 
-      border-bottom: 1px solid #DED2C9;
+      backdrop-filter: blur(12px);
+
+      border-bottom: 1px solid #DDCEC5;
 
       z-index: 1000;
     }
@@ -75,21 +86,24 @@
     }
 
     .logo {
-      font-size: 20px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      color: #E76F3C;
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      color: #E46F45;
     }
 
     .logo span {
-      color: #E76F3C;
+      color: #E46F45;
     }
 
     .nav-links {
       display: flex;
       gap: 32px;
-      color: #6A5750;
+
+      color: #695650;
+
       font-size: 14px;
+      font-weight: 500;
     }
 
     .nav-links a {
@@ -97,134 +111,268 @@
     }
 
     .nav-links a:hover {
-      color: #E76F3C;
+      color: #E46F45;
     }
 
 
-    /* =========================
+    /* ==================================================
        HERO
-    ========================= */
+    ================================================== */
 
     .hero {
+      position: relative;
+
       min-height: 100vh;
+
       display: flex;
       align-items: center;
-      background: #F6F0EA;
+
+      overflow: hidden;
+
+      background: #F5EDE7;
+    }
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 420px;
+      height: 420px;
+
+      right: -160px;
+      top: 100px;
+
+      background: #F1C7B5;
+
+      border-radius: 50%;
+
+      opacity: 0.55;
+    }
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      width: 240px;
+      height: 240px;
+
+      left: -90px;
+      bottom: 60px;
+
+      background: #E9B5C0;
+
+      border-radius: 45% 55% 60% 40%;
+
+      opacity: 0.35;
+
+      transform: rotate(-18deg);
     }
 
     .hero-content {
       position: relative;
+
       z-index: 2;
+
       padding-top: 80px;
     }
 
     .eyebrow {
-      color: #E76F3C;
+      color: #E46F45;
+
       font-size: 13px;
-      letter-spacing: 4px;
+
+      font-weight: 600;
+
+      letter-spacing: 3px;
+
       text-transform: uppercase;
-      margin-bottom: 22px;
+
+      margin-bottom: 24px;
     }
 
     .hero h1 {
       font-size: clamp(55px, 10vw, 115px);
-      line-height: 0.9;
-      letter-spacing: -6px;
-      margin-bottom: 30px;
+
+      line-height: 0.88;
+
+      letter-spacing: -7px;
+
+      margin-bottom: 32px;
+
+      font-weight: 700;
     }
 
     .orange-name {
-      color: #E76F3C;
+      color: #E46F45;
     }
 
     .hero h2 {
       font-size: clamp(23px, 4vw, 40px);
-      font-weight: 400;
-      color: #463633;
+
+      font-weight: 500;
+
+      letter-spacing: -1.5px;
+
+      color: #463431;
+
       margin-bottom: 25px;
     }
 
     .hero-description {
       max-width: 650px;
+
       color: #735F58;
+
       font-size: 18px;
+
+      line-height: 1.75;
+
       margin-bottom: 38px;
     }
 
     .buttons {
       display: flex;
+
       gap: 14px;
+
       flex-wrap: wrap;
     }
 
     .button {
       display: inline-block;
+
       padding: 14px 24px;
 
       border: 1px solid #CDBDB3;
+
       border-radius: 9px;
 
       transition: 0.3s;
 
       font-size: 14px;
 
+      font-weight: 500;
+
       background: #FFF9F5;
+
       color: #463633;
     }
 
     .button.primary {
-      background: #E76F3C;
-      border-color: #E76F3C;
+      background: #E46F45;
+
+      border-color: #E46F45;
+
       color: #FFFFFF;
     }
 
     .button:hover {
       transform: translateY(-3px);
 
-      border-color: #E76F3C;
+      border-color: #E46F45;
 
       box-shadow:
-        0 8px 20px rgba(80, 45, 30, 0.10);
+        0 10px 25px rgba(80, 45, 30, 0.12);
     }
 
 
-    /* =========================
+    /* ==================================================
        SECTIONS
-    ========================= */
+    ================================================== */
 
     section {
       padding: 120px 0;
+
+      position: relative;
     }
 
     .section-label {
-      color: #E76F3C;
-      font-size: 13px;
+      color: #E46F45;
+
+      font-size: 12px;
+
+      font-weight: 600;
+
       letter-spacing: 3px;
+
       text-transform: uppercase;
-      margin-bottom: 12px;
+
+      margin-bottom: 14px;
     }
 
     .section-title {
       font-size: clamp(38px, 6vw, 64px);
+
       line-height: 1;
+
       letter-spacing: -3px;
+
       margin-bottom: 50px;
-      color: #2B2020;
+
+      color: #2D2020;
+
+      font-weight: 700;
     }
 
 
-    /* =========================
+    /* ==================================================
        PROJECTS
-    ========================= */
+    ================================================== */
 
     #work {
-      background: #EDE3DB;
+      background: #EADDD4;
+
+      overflow: hidden;
+    }
+
+    #work::before {
+      content: "";
+
+      position: absolute;
+
+      width: 300px;
+      height: 300px;
+
+      right: -130px;
+      top: 40px;
+
+      background: #E8B8A7;
+
+      border-radius: 50%;
+
+      opacity: 0.35;
+    }
+
+    #work::after {
+      content: "";
+
+      position: absolute;
+
+      width: 180px;
+      height: 180px;
+
+      left: -80px;
+      bottom: 100px;
+
+      background: #D9A8B7;
+
+      border-radius: 42% 58% 55% 45%;
+
+      opacity: 0.28;
     }
 
     .projects {
+      position: relative;
+
+      z-index: 2;
+
       display: grid;
+
       grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+
+      gap: 26px;
     }
 
     .project {
@@ -234,33 +382,36 @@
 
       background: #FFF9F5;
 
-      border: 1px solid #D9CBC1;
+      border: 1px solid #D8C8BE;
 
-      border-radius: 16px;
+      border-radius: 18px;
 
       overflow: hidden;
 
       display: flex;
+
       flex-direction: column;
+
       justify-content: flex-end;
 
       transition: 0.35s;
 
       box-shadow:
-        0 12px 30px rgba(70, 45, 35, 0.08);
+        0 14px 32px rgba(70, 45, 35, 0.08);
     }
 
     .project:hover {
-      transform: translateY(-7px);
+      transform: translateY(-8px);
 
-      border-color: #C38D73;
+      border-color: #D39278;
 
       box-shadow:
-        0 20px 40px rgba(70, 45, 35, 0.12);
+        0 24px 45px rgba(70, 45, 35, 0.14);
     }
 
     .project-image {
       position: absolute;
+
       inset: 0;
 
       width: 100%;
@@ -275,62 +426,74 @@
       content: "";
 
       position: absolute;
+
       inset: 0;
 
-      background: rgba(35, 25, 22, 0.32);
+      background: rgba(32, 22, 20, 0.30);
 
       z-index: 1;
     }
 
     .project-with-image:hover .project-image {
-      transform: scale(1.04);
+      transform: scale(1.045);
     }
 
     .project-info {
       position: relative;
+
       z-index: 2;
 
-      padding: 30px;
+      padding: 32px;
 
       color: #FFFFFF;
     }
 
+    /* Project numbers intentionally removed */
+
     .project-number {
-      display: block;
-
-      color: #E76F3C;
-
-      font-size: 13px;
-
-      margin-bottom: 10px;
+      display: none;
     }
 
     .project h3 {
       font-size: 32px;
+
       line-height: 1.1;
+
+      letter-spacing: -1px;
+
       margin-bottom: 8px;
+
       color: #FFFFFF;
+
+      font-weight: 600;
     }
 
     .project p {
       color: #F3DDD1;
+
       font-size: 14px;
+
+      font-weight: 400;
     }
 
 
-    /* =========================
+    /* ==================================================
        PLATFORM LINKS
-    ========================= */
+    ================================================== */
 
     .platform-links {
       display: flex;
+
       gap: 8px;
+
       flex-wrap: wrap;
+
       margin-top: 18px;
     }
 
     .platform-link {
       display: inline-flex;
+
       align-items: center;
 
       padding: 8px 13px;
@@ -345,13 +508,15 @@
 
       font-size: 12px;
 
+      font-weight: 500;
+
       transition: 0.25s;
     }
 
     .platform-link:hover {
-      background: #E76F3C;
+      background: #E46F45;
 
-      border-color: #E76F3C;
+      border-color: #E46F45;
 
       color: #FFFFFF;
 
@@ -359,62 +524,43 @@
     }
 
 
-    /* =========================
-       TEXT PROJECTS
-    ========================= */
-
-    .project-text {
-      padding: 32px;
-
-      justify-content: space-between;
-
-      background: #FFF9F5;
-    }
-
-    .project-text .project-number {
-      color: #E76F3C;
-    }
-
-    .project-text h3 {
-      color: #2B2020;
-    }
-
-    .project-text p {
-      color: #735F58;
-    }
-
-    .project-text-content {
-      position: relative;
-      z-index: 2;
-      margin-top: auto;
-    }
-
-    .project-text .platform-link {
-      border: 1px solid #D0BDB1;
-      background: #F6F0EA;
-      color: #59443D;
-    }
-
-    .project-text .platform-link:hover {
-      background: #E76F3C;
-      border-color: #E76F3C;
-      color: #FFFFFF;
-    }
-
-
-    /* =========================
+    /* ==================================================
        ABOUT
-    ========================= */
+    ================================================== */
 
     .about-section {
-      background: #F6F0EA;
+      background: #F5EDE7;
 
-      border-top: 1px solid #DED2C9;
+      border-top: 1px solid #DDCEC5;
 
-      border-bottom: 1px solid #DED2C9;
+      border-bottom: 1px solid #DDCEC5;
+
+      overflow: hidden;
+    }
+
+    .about-section::after {
+      content: "";
+
+      position: absolute;
+
+      width: 260px;
+      height: 260px;
+
+      right: -100px;
+      bottom: -80px;
+
+      background: #EBC3C9;
+
+      border-radius: 50%;
+
+      opacity: 0.28;
     }
 
     .about-grid {
+      position: relative;
+
+      z-index: 2;
+
       display: grid;
 
       grid-template-columns: 0.8fr 1.2fr;
@@ -429,24 +575,23 @@
 
       font-size: 17px;
 
-      line-height: 1.8;
+      line-height: 1.85;
     }
 
     .about-text p {
       margin-bottom: 24px;
     }
 
-    .about-text strong {
-      color: #3C2D29;
-      font-weight: 600;
-    }
 
-
-    /* =========================
+    /* ==================================================
        STATS
-    ========================= */
+    ================================================== */
 
     .stats {
+      position: relative;
+
+      z-index: 2;
+
       display: grid;
 
       grid-template-columns: repeat(3, 1fr);
@@ -467,31 +612,66 @@
 
       box-shadow:
         0 10px 25px rgba(70, 45, 35, 0.06);
+
+      transition: 0.25s;
+    }
+
+    .stat:hover {
+      transform: translateY(-4px);
+
+      border-color: #D9A08A;
     }
 
     .stat-number {
       font-size: 48px;
 
-      font-weight: 800;
+      font-weight: 700;
 
-      color: #E76F3C;
+      color: #E46F45;
+
+      letter-spacing: -2px;
     }
 
     .stat-label {
       color: #735F58;
+
       font-size: 14px;
     }
 
 
-    /* =========================
+    /* ==================================================
        SKILLS
-    ========================= */
+    ================================================== */
 
     #skills {
-      background: #EDE3DB;
+      background: #EADDD4;
+
+      overflow: hidden;
+    }
+
+    #skills::before {
+      content: "";
+
+      position: absolute;
+
+      width: 220px;
+      height: 220px;
+
+      left: -90px;
+      top: 60px;
+
+      background: #E7B1BC;
+
+      border-radius: 50%;
+
+      opacity: 0.3;
     }
 
     .skills {
+      position: relative;
+
+      z-index: 2;
+
       display: flex;
 
       flex-wrap: wrap;
@@ -510,30 +690,79 @@
 
       background: #FFF9F5;
 
+      font-size: 14px;
+
+      font-weight: 500;
+
       transition: 0.25s;
     }
 
     .skill:hover {
-      border-color: #E76F3C;
+      border-color: #E46F45;
 
       color: #2B2020;
 
-      background: #FFF9F5;
-
       transform: translateY(-2px);
+
+      box-shadow:
+        0 8px 18px rgba(70, 45, 35, 0.08);
     }
 
 
-    /* =========================
+    /* ==================================================
        CONTACT
-    ========================= */
+    ================================================== */
 
     .contact {
       text-align: center;
 
       padding-bottom: 100px;
 
-      background: #F6F0EA;
+      background: #F5EDE7;
+
+      overflow: hidden;
+    }
+
+    .contact::before {
+      content: "";
+
+      position: absolute;
+
+      width: 300px;
+      height: 300px;
+
+      left: -120px;
+      bottom: -130px;
+
+      background: #EBC0C8;
+
+      border-radius: 50%;
+
+      opacity: 0.35;
+    }
+
+    .contact::after {
+      content: "";
+
+      position: absolute;
+
+      width: 220px;
+      height: 220px;
+
+      right: -80px;
+      top: 70px;
+
+      background: #F0C4AE;
+
+      border-radius: 40% 60% 50% 50%;
+
+      opacity: 0.38;
+    }
+
+    .contact .container {
+      position: relative;
+
+      z-index: 2;
     }
 
     .contact h2 {
@@ -541,11 +770,13 @@
 
       line-height: 0.95;
 
-      letter-spacing: -4px;
+      letter-spacing: -5px;
 
       margin-bottom: 30px;
 
-      color: #E76F3C;
+      color: #E46F45;
+
+      font-weight: 700;
     }
 
     .contact p {
@@ -567,12 +798,12 @@
     }
 
 
-    /* =========================
+    /* ==================================================
        FOOTER
-    ========================= */
+    ================================================== */
 
     footer {
-      border-top: 1px solid #DED2C9;
+      border-top: 1px solid #D8C8BE;
 
       padding: 30px 0;
 
@@ -580,15 +811,19 @@
 
       font-size: 13px;
 
-      background: #EDE3DB;
+      background: #EADDD4;
     }
 
 
-    /* =========================
+    /* ==================================================
        MOBILE
-    ========================= */
+    ================================================== */
 
     @media (max-width: 700px) {
+
+      nav {
+        padding: 17px 0;
+      }
 
       .nav-links {
         display: none;
@@ -631,7 +866,7 @@
       }
 
       .contact h2 {
-        letter-spacing: -2px;
+        letter-spacing: -3px;
       }
 
     }
@@ -644,9 +879,9 @@
 <body>
 
 
-  <!-- =========================
+  <!-- ==================================================
        NAVIGATION
-  ========================= -->
+  ================================================== -->
 
   <nav>
 
@@ -681,9 +916,9 @@
   </nav>
 
 
-  <!-- =========================
+  <!-- ==================================================
        HERO
-  ========================= -->
+  ================================================== -->
 
   <header class="hero">
 
@@ -735,9 +970,9 @@
   </header>
 
 
-  <!-- =========================
+  <!-- ==================================================
        PROJECTS
-  ========================= -->
+  ================================================== -->
 
   <section id="work">
 
@@ -754,7 +989,7 @@
       <div class="projects">
 
 
-        <!-- MENCHERZ / LUCKY LUDO -->
+        <!-- 01 — MENCHERZ -->
 
         <div class="project project-with-image">
 
@@ -765,10 +1000,6 @@
           >
 
           <div class="project-info">
-
-            <span class="project-number">
-              01
-            </span>
 
             <h3>
               Mencherz / Lucky Ludo
@@ -805,7 +1036,7 @@
         </div>
 
 
-        <!-- QUIZ OF KINGS -->
+        <!-- 02 — QUIZ OF KINGS -->
 
         <div class="project project-with-image">
 
@@ -816,10 +1047,6 @@
           >
 
           <div class="project-info">
-
-            <span class="project-number">
-              02
-            </span>
 
             <h3>
               Quiz of Kings
@@ -856,7 +1083,7 @@
         </div>
 
 
-        <!-- MIGHTY WARS / VERSUS -->
+        <!-- 03 — MIGHTY WARS -->
 
         <div class="project project-with-image">
 
@@ -867,10 +1094,6 @@
           >
 
           <div class="project-info">
-
-            <span class="project-number">
-              03
-            </span>
 
             <h3>
               Mighty Wars / Versus
@@ -898,15 +1121,17 @@
         </div>
 
 
-        <!-- HAKEM SHO -->
+        <!-- 04 — HAKEM SHO -->
 
-        <div class="project project-text">
+        <div class="project project-with-image">
 
-          <span class="project-number">
-            04
-          </span>
+          <img
+            src="hakem-sho.png"
+            alt="Hakem Sho"
+            class="project-image"
+          >
 
-          <div class="project-text-content">
+          <div class="project-info">
 
             <h3>
               Hakem Sho
@@ -943,15 +1168,17 @@
         </div>
 
 
-        <!-- LEADERS OF COUP -->
+        <!-- 05 — LEADERS OF COUP -->
 
-        <div class="project project-text">
+        <div class="project project-with-image">
 
-          <span class="project-number">
-            05
-          </span>
+          <img
+            src="leaders-of-coup.jpg"
+            alt="Leaders of Coup"
+            class="project-image"
+          >
 
-          <div class="project-text-content">
+          <div class="project-info">
 
             <h3>
               Leaders of Coup
@@ -979,15 +1206,17 @@
         </div>
 
 
-        <!-- PISHIPOP -->
+        <!-- 06 — PISHIPOP -->
 
-        <div class="project project-text">
+        <div class="project project-with-image">
 
-          <span class="project-number">
-            06
-          </span>
+          <img
+            src="pishi-pop.jpg"
+            alt="Pishipop"
+            class="project-image"
+          >
 
-          <div class="project-text-content">
+          <div class="project-info">
 
             <h3>
               Pishipop
@@ -1002,18 +1231,45 @@
         </div>
 
 
-        <!-- DRAGON LAND -->
+        <!-- 07 — DRAGON LAND -->
 
-        <div class="project project-text">
+        <div class="project project-with-image">
 
-          <span class="project-number">
-            07
-          </span>
+          <img
+            src="dragon-land.webp"
+            alt="Dragon Land"
+            class="project-image"
+          >
 
-          <div class="project-text-content">
+          <div class="project-info">
 
             <h3>
               Dragon Land
+            </h3>
+
+            <p>
+              Game Design
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- 08 — MARCRAFT -->
+
+        <div class="project project-with-image">
+
+          <img
+            src="marcraft.png"
+            alt="Marcraft"
+            class="project-image"
+          >
+
+          <div class="project-info">
+
+            <h3>
+              Marcraft
             </h3>
 
             <p>
@@ -1032,9 +1288,9 @@
   </section>
 
 
-  <!-- =========================
+  <!-- ==================================================
        ABOUT
-  ========================= -->
+  ================================================== -->
 
   <section
     id="about"
@@ -1072,9 +1328,7 @@
 
           <p>
             With a background in
-            <strong>
-              Industrial Engineering and Illustration
-            </strong>,
+            Industrial Engineering and Illustration,
             I combine analytical thinking,
             visual creativity, and game design
             to build engaging experiences.
@@ -1082,17 +1336,13 @@
 
           <p>
             My experience spans
-            <strong>
-              feature and system design, UX,
-              prototyping, GDD writing, and
-              data-informed design
-            </strong>,
+            feature and system design, UX,
+            prototyping, GDD writing, and
+            data-informed design,
             with work on titles including
-            <strong>
-              Quiz of Kings, Mighty Wars,
-              Mencherz, Hakem Sho,
-              and Leaders of Coup.
-            </strong>
+            Quiz of Kings, Mighty Wars,
+            Mencherz, Hakem Sho,
+            and Leaders of Coup.
           </p>
 
         </div>
@@ -1120,7 +1370,7 @@
         <div class="stat">
 
           <div class="stat-number">
-            7
+            8
           </div>
 
           <div class="stat-label">
@@ -1151,9 +1401,9 @@
   </section>
 
 
-  <!-- =========================
+  <!-- ==================================================
        SKILLS
-  ========================= -->
+  ================================================== -->
 
   <section id="skills">
 
@@ -1204,9 +1454,9 @@
   </section>
 
 
-  <!-- =========================
+  <!-- ==================================================
        CONTACT
-  ========================= -->
+  ================================================== -->
 
   <section
     id="contact"
@@ -1256,9 +1506,9 @@
   </section>
 
 
-  <!-- =========================
+  <!-- ==================================================
        FOOTER
-  ========================= -->
+  ================================================== -->
 
   <footer>
 
